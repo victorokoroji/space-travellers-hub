@@ -1,5 +1,5 @@
-@import './CSS/navbar.css';
-@import './CSS/header.css';
+@import './css/navbar.css';
+@import './css/header.css';
 
 
 :root {
@@ -8,7 +8,7 @@
   --white: #fff;
   --gray: #858693;
   --light-gray: #e0e0e0;
-  --blur: #d1d1d1;
+  --blue: #007bff;
 }
 
 /* global styling  */
