@@ -12,7 +12,7 @@
 .navlist li a {
   text-decoration: none;
   color: var(--blue);
-  font-size: 20px;
+  font-size: 0.9rem;
 }
 
 .active {
