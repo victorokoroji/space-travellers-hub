@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+header .branding {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .branding img {
+  height: 3rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header .menu-item {
+  padding: 1rem 0.5rem;
+}

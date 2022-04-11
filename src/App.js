@@ -1,8 +1,10 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <h1> Space-hub</h1>
     </div>
   );
