@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Mission = () => {
-  return (
+	return (
 		<table>
 			<tr>
 				<th>Mission</th>
@@ -30,7 +30,9 @@ const Mission = () => {
 					pariatur ab fuga non sint doloremque! Nihil nesciunt, quam dolore accusantium sed enim
 					quis quisquam. Vel, dolor! Voluptatibus!
 				</td>
-				<span>NOT A MEMBER</span>
+				<td>
+					<span>NOT A MEMBER</span>
+				</td>
 				<td>
 					<button>Join Mission</button>
 				</td>
@@ -42,7 +44,9 @@ const Mission = () => {
 					pariatur ab fuga non sint doloremque! Nihil nesciunt, quam dolore accusantium sed enim
 					quis quisquam. Vel, dolor! Voluptatibus!
 				</td>
-				<span>NOT A MEMBER</span>
+				<td>
+					<span>NOT A MEMBER</span>
+				</td>
 				<td>
 					<button>Join Mission</button>
 				</td>

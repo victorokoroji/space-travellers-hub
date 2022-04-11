@@ -1,38 +1,49 @@
 .mission {
-  padding: 50px 5%;
+	padding: 50px 5%;
 }
 
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 
-td, th {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid var(--light-gray);
+td,
+th {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid var(--light-gray);
 }
 
 td:nth-child(1) {
-  font-weight: bolder;
-  vertical-align: top;
+	font-weight: bolder;
+	vertical-align: top;
 }
 
 td:nth-child(3),
 td:nth-child(4) {
-  text-align: center;
-  padding: 8px 15px;
+	text-align: center;
+	padding: 8px 15px;
+}
+
+td span {
+	background-color: var(--very-dark-gray);
+	border-radius: 5px;
+	display: block;
+	width: 120px;
+	font-size: 0.9rem;
+  color: var(--white);
+	padding: 3px 0;
 }
 
 td button {
-  padding: 10px 0;
-  border: 1px solid var(--dark-gray);
-  border-radius: 5px;
-  outline: none;
-  display: block;
-  width: 120px;
-  font-size: 1rem;
+	padding: 10px 0;
+	border: 1px solid var(--dark-gray);
+	border-radius: 5px;
+	outline: none;
+	display: block;
+	width: 120px;
+	font-size: 1rem;
 }
 
 tr:nth-child(even) {
-  background-color: var(--gray-white);
+	background-color: var(--gray-white);
 }
