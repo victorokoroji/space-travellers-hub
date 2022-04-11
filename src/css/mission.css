@@ -1,26 +1,36 @@
-table {
-  border-collapse: collapse;
-  padding: 30px 5%;
+.mission {
+  padding: 50px 5%;
 }
 
-td {
+table {
+  border-collapse: collapse;
+}
+
+td, th {
   text-align: left;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid var(--light-gray);
 }
 
 td:nth-child(1) {
   font-weight: bolder;
+  vertical-align: top;
 }
 
 td:nth-child(3),
 td:nth-child(4) {
   text-align: center;
+  padding: 8px 15px;
 }
 
 td button {
-  padding: 10px;
-  background-color: var(--dark-gray);
+  padding: 10px 0;
+  border: 1px solid var(--dark-gray);
+  border-radius: 5px;
+  outline: none;
+  display: block;
+  width: 120px;
+  font-size: 1rem;
 }
 
 tr:nth-child(even) {
