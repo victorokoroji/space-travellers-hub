@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+  padding: 30px 5%;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid var(--light-gray);
+}
+
+td:nth-child(1) {
+  font-weight: bolder;
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+  text-align: center;
+}
+
+td button {
+  padding: 10px;
+  background-color: var(--dark-gray);
+}
+
+tr:nth-child(even) {
+  background-color: var(--gray-white);
+}
