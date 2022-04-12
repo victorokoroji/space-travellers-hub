@@ -4,7 +4,9 @@ import Header from './components/Header';
 import MissionsPage from './pages/MissionsPage'
 import Rockets from './pages/Rockets';
 import Profile from './pages/Profile';
+import missionServices from './redux/services/missionServices'
 
+console.log(missionServices.getMissionLists())
 function App() {
   return (
     <div className="App">

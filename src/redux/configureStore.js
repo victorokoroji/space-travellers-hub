@@ -1,11 +1,7 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import { createLogger } from "redux-logger";
-import missionReducer from "./missions/mission";
-import { GET_MISSIONS } from "./missions/mission";
-
-const logger = createLogger({
-	predicate: (getState, action) => action.type !== GET_MISSIONS,
-})
+import { createStore, combineReducers, applyMiddleware } from 'redux'
+import missionReducer from './missions/mission'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 const rootReducer = combineReducers({ missionReducer })
-const store = createStore(rootReducer, applyMiddleware(logger))
+const store = createStore(rootReducer, applyMiddleware(logger, thunk))
 export default store
