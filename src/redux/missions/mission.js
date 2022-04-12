@@ -1,6 +1,7 @@
 import missionServices from '../services/missionServices';
 
 const GET_MISSIONS = 'space-travellers-hub/mission/GET_MISSIONS';
+const JOIN_MISSION = 'space-travellers-hub/mission/JOIN_MISSION';
 
 const initialState = [];
 
