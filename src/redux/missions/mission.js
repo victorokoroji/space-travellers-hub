@@ -1,6 +1,6 @@
 import missionServices from '../services/missionServices'
 
-const GET_MISSIONS = 'space-travellers-hub/mission/GET_MISSIONS'
+export const GET_MISSIONS = 'space-travellers-hub/mission/GET_MISSIONS'
 
 const initialState = {}
 
@@ -29,4 +29,4 @@ const missionReducer = (state = initialState, action) => {
 	}
 }
 
-export missionReducer
+export default missionReducer
