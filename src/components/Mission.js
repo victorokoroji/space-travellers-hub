@@ -19,18 +19,12 @@ const Mission = ({ mission }) => {
 			</td>
 			<td>
 				{reserved ? (
-					<Button
-						className='join'
-						onClick={() => dispatch(joinMission(mission_id))}
-					>
-						Join Mission
+					<Button className='join' onClick={() => dispatch(leaveMission(mission_id))}>
+						Leave Mission
 					</Button>
 				) : (
-					<Button
-						className='leave'
-						onClick={() => dispatch(leaveMission(mission_id))}
-					>
-						Leave Mission
+					<Button className='leave' onClick={() => dispatch(joinMission(mission_id))}>
+						Join Mission
 					</Button>
 				)}
 			</td>
