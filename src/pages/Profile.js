@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Profile = () => (
-  <div>Profile</div>
+  <section className='profile'>
+     
+  </section>
 );
 
 export default Profile;
