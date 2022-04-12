@@ -13,8 +13,12 @@ export const getMissions = () => async (dispatch) => {
   });
 };
 
-export const joinMission = () => (dispatch) => {
-	return 
+export const joinMission = (id) => (dispatch) => {
+	const result = await missionServices.updateMissionLists(id);
+	return dispatch({
+		type: JOIN_MISSION,
+		payload: result
+	})
 }
 
 const missionReducer = (state = initialState, action) => {
