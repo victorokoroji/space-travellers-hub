@@ -13,6 +13,10 @@ export const getMissions = () => async (dispatch) => {
   });
 };
 
+export const joinMission = () => (dispatch) => {
+	return 
+}
+
 const missionReducer = (state = initialState, action) => {
   const { payload } = action;
   switch (action.type) {
