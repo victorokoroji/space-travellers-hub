@@ -51,7 +51,9 @@ const missionReducer = (state = initialState, action) => {
       return state.map((mission) => {
         if (mission.mission_id !== payload) return mission;
         return { ...mission, reserved: false };
-      });
+			});
+		case GET_JOINED_MISSION: 
+			return state.filter((mission) => mission.reserved === true)
     default:
       return state;
   }
