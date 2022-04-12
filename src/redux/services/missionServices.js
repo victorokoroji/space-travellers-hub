@@ -16,4 +16,4 @@ const missionServices = {
 	getMissionLists,
 }
 
-export default services
+export default missionServices

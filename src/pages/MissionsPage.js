@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react'
 import Mission from '../components/Mission'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch, shallowEqual } from 'react-redux'
 import { getMissions } from '../redux/missions/mission'
 
-const missions = useSelector(state => state.missionReducer)
-console.log(missions)
-const dispatch = useDispatch()
+const Missions = () => {
+	const missions = useSelector(state => state.missionReducer, shallowEqual)
+	console.log(missions)
+	const dispatch = useDispatch()
 
-useEffect(() => {
-	dispatch(getMissions())
-}, [])
+	useEffect(() => {
+		dispatch(getMissions())
+	}, [])
 
-const Missions = () => (
-	<div className='mission'>
-		<Mission />
-	</div>
-)
+	return (
+		<div className='mission'>
+			<Mission />
+		</div>
+	)
+}
 export default Missions
