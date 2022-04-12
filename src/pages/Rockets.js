@@ -25,7 +25,6 @@ const Rockets = () => {
           </div>
         );
       })}
-      ;
     </div>
   );
 };
