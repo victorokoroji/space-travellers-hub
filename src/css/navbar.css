@@ -1,0 +1,21 @@
+.navlist {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--blue);
+}
