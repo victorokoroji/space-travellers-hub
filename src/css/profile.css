@@ -1,5 +1,5 @@
 .profile {
-    padding: 50px 5%;
+  padding: 50px 5%;
 }
 
 .list span {
@@ -10,6 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  border: 1px solid var(--gray);
+  border-collapse: collapse;
+  padding: 10px 15px;
 }
 
 .list button {
@@ -18,26 +22,19 @@
   cursor: pointer;
 }
 
-.list li {
-  list-style: none;
-  border: 1px solid var(--gray);
-  border-collapse: collapse;
-  padding: 10px 15px;
-}
-
 .message {
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .profile-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-.join-mission,
-.reserved-rockets {
-  flex: 1;
-}
+  .join-mission,
+  .reserved-rockets {
+    flex: 1;
+  }
 }
