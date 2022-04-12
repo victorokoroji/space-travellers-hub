@@ -14,7 +14,7 @@ const Missions = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th aria-label="none" />
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>

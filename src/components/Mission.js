@@ -33,7 +33,8 @@ const Mission = ({ mission }) => {
 };
 
 Mission.propTypes = {
-  mission: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])).isRequired,
+  mission: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string,
+    PropTypes.number, PropTypes.bool])).isRequired,
 };
 
 export default Mission;

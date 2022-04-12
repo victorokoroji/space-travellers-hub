@@ -34,7 +34,8 @@ td span {
   padding: 3px 0;
 }
 
-td button, .leave {
+td button,
+.leave {
   padding: 10px 0;
   border: 1px solid var(--dark-gray);
   border-radius: 5px;
