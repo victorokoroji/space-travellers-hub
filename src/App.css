@@ -1,5 +1,6 @@
 @import './css/navbar.css';
 @import './css/header.css';
+@import './css/mission.css';
 
 :root {
   /* primary colors */
@@ -8,6 +9,9 @@
   --gray: #858693;
   --light-gray: #e0e0e0;
   --blue: #007bff;
+  --dark-gray: #6d757d;
+  --gray-white:#f2f2f2;
+  --very-dark-gray: #6d757d;
 }
 
 /* global styling  */
