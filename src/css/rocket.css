@@ -9,9 +9,24 @@
 .eachRocket {
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 
 .rocket-image {
-  height: 10rem;
-  width: 250px;
+  height: 150px;
+  width: 200px;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.reserveBtn {
+  border-style: none;
+  background-color: #0e72ed;
+  color: #fff;
+  padding: 0.5rem;
+  width: 20%;
 }

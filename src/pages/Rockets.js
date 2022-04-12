@@ -14,14 +14,17 @@ const Rockets = () => {
     <div className="rocket">
       {rockets.map((rocket) => {
         const {
-          id, name, type, images,
+          id, name, description, images,
         } = rocket;
 
         return (
           <div key={id} className="eachRocket">
             <img src={images} alt="rocket" className="rocket-image" />
-            <p>{name}</p>
-            <p>{type}</p>
+            <div className="rocket-info">
+              <h3>{name}</h3>
+              <p>{description}</p>
+              <button className="reserveBtn" type="button">Reserve Rocket</button>
+            </div>
           </div>
         );
       })}

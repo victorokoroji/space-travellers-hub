@@ -19,6 +19,7 @@ export const fetchRocketsFromServer = () => async (dispatch) => {
     name: rocket.rocket_name,
     type: rocket.rocket_type,
     images: rocket.flickr_images[0],
+    description: rocket.description,
   }));
   dispatch(fetchRockets(mappedRockets));
 };
