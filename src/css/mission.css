@@ -34,7 +34,8 @@ td span {
   padding: 3px 0;
 }
 
-td button {
+td button,
+.leave {
   padding: 10px 0;
   border: 1px solid var(--dark-gray);
   border-radius: 5px;
@@ -42,8 +43,15 @@ td button {
   display: block;
   width: 120px;
   font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--white);
 }
 
 tr:nth-child(even) {
   background-color: var(--gray-white);
+}
+
+.join {
+  border: 1px solid var(--red);
+  color: var(--red);
 }
