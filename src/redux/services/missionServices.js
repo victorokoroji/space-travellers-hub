@@ -12,19 +12,8 @@ const getMissionLists = async () => {
 	}
 }
 
-const updateMissionLists = async id => {
-	try {
-		const response = await axios.post(`${MISSION_API}/${id}`)
-		const datas = await response.data
-		return datas
-	} catch (error) {
-		return error
-	}
-}
-
 const missionServices = {
 	getMissionLists,
-	updateMissionLists,
 }
 
 export default missionServices
