@@ -34,6 +34,10 @@ td span {
   padding: 3px 0;
 }
 
+.member {
+  background-color: var(--blue);
+}
+
 td button,
 .leave {
   padding: 10px 0;
