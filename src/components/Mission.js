@@ -4,6 +4,7 @@ import Button from './Button'
 const Mission = ({ mission }) => {
 	const { mission_id, mission_name, description } = mission
 	return (
+
 			<tr className={mission_id}>
 				<td>{mission_name}</td>
 				<td>{description}</td>
