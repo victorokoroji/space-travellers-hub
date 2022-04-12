@@ -14,9 +14,7 @@ const Mission = ({ mission }) => {
     <tr className={mission_id}>
       <td>{mission_name}</td>
       <td>{description}</td>
-      <td>
-        <span>NOT A MEMBER</span>
-      </td>
+      <td>{reserved ? (<span className="member">Active Member</span>) : (<span>NOT A MEMBER</span>)}</td>
       <td>
         {reserved ? (
           <Button className="join" onClick={() => dispatch(leaveMission(mission_id))}>
