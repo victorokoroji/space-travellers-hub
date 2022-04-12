@@ -11,25 +11,25 @@ const Mission = ({ mission }) => {
   } = mission;
 
   return (
-		<tr className={mission_id}>
-			<td>{mission_name}</td>
-			<td>{description}</td>
-			<td>
-				<span>NOT A MEMBER</span>
-			</td>
-			<td>
-				{reserved ? (
-					<Button className='join' onClick={() => dispatch(leaveMission(mission_id))}>
-						Leave Mission
-					</Button>
-				) : (
-					<Button className='leave' onClick={() => dispatch(joinMission(mission_id))}>
-						Join Mission
-					</Button>
-				)}
-			</td>
-		</tr>
-	)
+    <tr className={mission_id}>
+      <td>{mission_name}</td>
+      <td>{description}</td>
+      <td>
+        <span>NOT A MEMBER</span>
+      </td>
+      <td>
+        {reserved ? (
+          <Button className="join" onClick={() => dispatch(leaveMission(mission_id))}>
+            Leave Mission
+          </Button>
+        ) : (
+          <Button className="leave" onClick={() => dispatch(joinMission(mission_id))}>
+            Join Mission
+          </Button>
+        )}
+      </td>
+    </tr>
+  );
 };
 
 Mission.propTypes = {
