@@ -1,3 +1,35 @@
-.App {
-  text-align: center;
+@import './css/navbar.css';
+@import './css/header.css';
+
+:root {
+  /* primary colors */
+  --black: #000;
+  --white: #fff;
+  --gray: #858693;
+  --light-gray: #e0e0e0;
+  --blur: #d1d1d1;
+  --blue: #007bff;
+}
+
+/* global styling  */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
