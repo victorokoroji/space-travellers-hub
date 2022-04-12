@@ -43,6 +43,7 @@ td button, .leave {
   width: 120px;
   font-size: 1rem;
   cursor: pointer;
+  background-color: var(--white);
 }
 
 tr:nth-child(even) {

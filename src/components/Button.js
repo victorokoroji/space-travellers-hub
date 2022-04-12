@@ -12,11 +12,11 @@ const Button = ({
 );
 
 Button.propTypes = {
-	className: PropTypes.string,
-	id: PropTypes.string,
-	children: PropTypes.string.isRequired,
-	onClick: PropTypes.func.isRequired,
-}
+  className: PropTypes.string,
+  id: PropTypes.string,
+  children: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 Button.defaultProps = {
   className: null,
