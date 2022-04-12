@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Mission = () => {
+const Mission = ({ mission }) => {
+	const {mission_id, mission_name, description} = mission
 	return (
 		<table>
 			<tr>
@@ -9,40 +10,10 @@ const Mission = () => {
 				<th>Status</th>
 				<th></th>
 			</tr>
-			<tr>
-				<td>Vic</td>
+			<tr className={mission_id}>
+				<td>{mission_name}</td>
 				<td>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo harum possimus
-					pariatur ab fuga non sint doloremque! Nihil nesciunt, quam dolore accusantium sed enim
-					quis quisquam. Vel, dolor! Voluptatibus!
-				</td>
-				<td>
-					<span>NOT A MEMBER</span>
-				</td>
-				<td>
-					<button>Join Mission</button>
-				</td>
-			</tr>
-			<tr>
-				<td>Victor</td>
-				<td>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo harum possimus
-					pariatur ab fuga non sint doloremque! Nihil nesciunt, quam dolore accusantium sed enim
-					quis quisquam. Vel, dolor! Voluptatibus!
-				</td>
-				<td>
-					<span>NOT A MEMBER</span>
-				</td>
-				<td>
-					<button>Join Mission</button>
-				</td>
-			</tr>
-			<tr>
-				<td>Vic</td>
-				<td>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo harum possimus
-					pariatur ab fuga non sint doloremque! Nihil nesciunt, quam dolore accusantium sed enim
-					quis quisquam. Vel, dolor! Voluptatibus!
+					{description}
 				</td>
 				<td>
 					<span>NOT A MEMBER</span>

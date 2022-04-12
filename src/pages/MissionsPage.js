@@ -5,7 +5,6 @@ import { getMissions } from '../redux/missions/mission'
 
 const Missions = () => {
 	const missions = useSelector(state => state.missionReducer, shallowEqual)
-	console.log(missions)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
@@ -14,7 +13,9 @@ const Missions = () => {
 
 	return (
 		<div className='mission'>
-			<Mission />
+			{missions.map(mission => (
+				<Mission key={mission.mission_id} mission={mission} />
+			))}
 		</div>
 	)
 }
