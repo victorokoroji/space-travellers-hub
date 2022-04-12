@@ -1,0 +1,17 @@
+.rocket {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+
+.eachRocket {
+  display: flex;
+  gap: 5px;
+}
+
+.rocket-image {
+  height: 10rem;
+  width: 250px;
+}
