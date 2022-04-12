@@ -9,6 +9,10 @@
   padding: 10px 15px;
 }
 
+.message {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .profile-list {
   display: flex;
