@@ -1,23 +1,23 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { getMissions } from '../redux/missions/mission'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getMissions } from '../redux/missions/mission';
 
 const Navbar = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <nav>
-      <ul className='navlist'>
+      <ul className="navlist">
         <li>
-          <NavLink to='/' className={navlist => (navlist.isActive ? 'active' : 'none')}>
+          <NavLink to="/" className={(navlist) => (navlist.isActive ? 'active' : 'none')}>
             Rockets
           </NavLink>
         </li>
         <li>
           <NavLink
-            to='/missions'
-            className={navlist => (navlist.isActive ? 'active' : 'none')}
+            to="/missions"
+            className={(navlist) => (navlist.isActive ? 'active' : 'none')}
             onClick={() => dispatch(getMissions())}
           >
             Missions
@@ -25,12 +25,12 @@ const Navbar = () => {
         </li>
         |
         <li>
-          <NavLink to='/profile' className={navlist => (navlist.isActive ? 'active' : 'none')}>
+          <NavLink to="/profile" className={(navlist) => (navlist.isActive ? 'active' : 'none')}>
             My Profile
           </NavLink>
         </li>
       </ul>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;
