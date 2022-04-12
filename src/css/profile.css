@@ -2,7 +2,21 @@
     padding: 50px 5%;
 }
 
-.list 
+.list span {
+  margin-right: 20px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .list li {
   list-style: none;
