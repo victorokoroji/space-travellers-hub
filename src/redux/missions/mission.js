@@ -1,6 +1,7 @@
 import missionServices from '../services/missionServices'
 
-export const GET_MISSIONS = 'space-travellers-hub/mission/GET_MISSIONS'
+const GET_MISSIONS = 'space-travellers-hub/mission/GET_MISSIONS'
+const JOIN_MISSION = 'space-travellers-hub/mission/JOIN_MISSION'
 
 const initialState = []
 
@@ -11,6 +12,8 @@ export const getMissions = () => async dispatch => {
 		payload: result,
 	})
 }
+
+
 
 const missionReducer = (state = initialState, action) => {
 	const { payload } = action
