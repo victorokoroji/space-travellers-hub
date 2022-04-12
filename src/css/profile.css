@@ -2,6 +2,8 @@
     padding: 50px 5%;
 }
 
+.list 
+
 .list li {
   list-style: none;
   border: 1px solid var(--gray);

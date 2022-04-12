@@ -1,9 +1,13 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
+import Button from '../components/Button';
+import { useDispatch } from 'react-redux'
+import { leaveMission } from '../redux/missions/mission'
 
 const Profile = () => {
   const missions = useSelector((state) => state.missionReducer, shallowEqual);
-
+	const dispatch = useDispatch()
+	
   return (
 		<section className='profile'>
 			<div className='profile-list'>
@@ -12,7 +16,15 @@ const Profile = () => {
 					{missions[0] ? (
 						<ul className='list'>
 							{missions.map(mission => (
-								<li key={mission.mission_id}>{mission.mission_name}</li>
+								<li key={mission.mission_id}>
+									<span>{mission.mission_name}</span>
+									<Button
+										className='join'
+										onClick={() => dispatch(leaveMission(mission.mission_id))}
+									>
+										Leave Mission
+									</Button>
+								</li>
 							))}
 						</ul>
 					) : (
