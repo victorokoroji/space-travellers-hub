@@ -17,6 +17,11 @@
   width: 200px;
 }
 
+.rev-word {
+  background-color: green;
+  color: #fff;
+}
+
 .rocket-info {
   display: flex;
   flex-direction: column;
@@ -27,6 +32,14 @@
   border-style: none;
   background-color: #0e72ed;
   color: #fff;
+  padding: 0.5rem;
+  width: 20%;
+}
+
+.cancel-book {
+  border-style: none;
+  background-color: #fff;
+  color: #000;
   padding: 0.5rem;
   width: 20%;
 }
