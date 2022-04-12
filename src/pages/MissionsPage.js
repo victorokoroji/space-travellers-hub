@@ -13,9 +13,17 @@ const Missions = () => {
 
 	return (
 		<div className='mission'>
-			{missions.map(mission => (
-				<Mission key={mission.mission_id} mission={mission} />
-			))}
+			<table>
+				<tr>
+					<th>Mission</th>
+					<th>Description</th>
+					<th>Status</th>
+					<th></th>
+				</tr>
+				{missions.map(mission => (
+					<Mission key={mission.mission_id} mission={mission} />
+				))}
+			</table>
 		</div>
 	)
 }
