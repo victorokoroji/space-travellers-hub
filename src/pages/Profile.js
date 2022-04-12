@@ -5,7 +5,7 @@ const Profile = () => (
 		<div className='profile-list'>
 			<div className='join-mission'>
 				<h2>My Missions</h2>
-				<ul>
+				<ul className='list'>
 					<li>jjjjjjjjj</li>
 					<li>jjjjjjjjj</li>
 					<li>jjjjjjjjj</li>
@@ -15,7 +15,7 @@ const Profile = () => (
 			</div>
 			<div className='reserved-rockets'>
 				<h2>My Rockets</h2>
-				<ul>
+				<ul className='list'>
 					<li>jjjjjjjjj</li>
 					<li>jjjjjjjjj</li>
 					<li>jjjjjjjjj</li>

@@ -1,3 +1,23 @@
 .profile {
     padding: 50px 5%;
 }
+
+.list li {
+  list-style: none;
+  border: 1px solid var(--gray);
+  border-collapse: collapse;
+  padding: 10px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.join-mission,
+.reserved-rockets {
+  flex: 1;
+}
+}
