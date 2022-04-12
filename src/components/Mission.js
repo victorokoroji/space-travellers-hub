@@ -9,7 +9,7 @@ const Mission = ({ mission }) => {
   const {
     mission_id, mission_name, description, reserved,
   } = mission;
-  console.log(mission, reserved);
+
   return (
     <tr className={mission_id}>
       <td>{mission_name}</td>
