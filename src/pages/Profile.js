@@ -33,6 +33,7 @@ const Profile = () => {
         </div>
         <div className="reserved-rockets">
           <h2>My Rockets</h2>
+          {rockets [0] ? (
           <ul className="list">
             {
             rockets.map((rocket) => (
@@ -42,6 +43,9 @@ const Profile = () => {
             ))
           }
           </ul>
+          ) : (
+            <div className="message"> No Reservations yet</div>
+          )}
         </div>
       </div>
     </section>
