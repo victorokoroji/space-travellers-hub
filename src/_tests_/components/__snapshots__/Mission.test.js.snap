@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect mission component to render correctly 1`] = `
+exports[`mission component renders datas accurately expect mission component to render correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
