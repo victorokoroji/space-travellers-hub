@@ -33,16 +33,16 @@ const Profile = () => {
         </div>
         <div className="reserved-rockets">
           <h2>My Rockets</h2>
-          {rockets [0] ? (
-          <ul className="list">
-            {
+          {rockets[0] ? (
+            <ul className="list">
+              {
             rockets.map((rocket) => (
               <li className="item" key={rocket.id}>
                 {rocket.name}
               </li>
             ))
           }
-          </ul>
+            </ul>
           ) : (
             <div className="message"> No Reservations yet</div>
           )}
