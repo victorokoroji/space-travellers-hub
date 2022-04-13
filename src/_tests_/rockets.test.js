@@ -1,9 +1,9 @@
-import missionReducer from '../redux/missions/mission'
-import { getMissions } from '../redux/missions/mission'
+import rocketReducer from '../redux/rockets/rockets'
+import { fetchRocketsFromServer } from '../redux/rockets/rockets'
 
 describe('reducer should return lists of rockets', () => {
 	it('should return lists of rockets in the state', () => {
 		const previousState = []
-		expect(missionReducer(previousState, getMissions())).toBeDefined()
+		expect(rocketReducer(previousState, fetchRocketsFromServer())).toBeDefined()
 	})
 })
