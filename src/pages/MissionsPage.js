@@ -7,7 +7,7 @@ const Missions = () => {
   const missions = useSelector((state) => state.missionReducer, shallowEqual);
 
   return (
-    <div className="mission">
+    <section className="mission">
       <table>
         <thead>
           <tr>
@@ -23,7 +23,7 @@ const Missions = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 export default Missions;

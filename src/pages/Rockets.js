@@ -11,7 +11,7 @@ const Rockets = () => {
   }, []);
 
   return (
-    <div className="rocket">
+    <section className="rocket">
       {rockets.map((rocket) => {
         const {
           id, name, description, images, reserved,
@@ -43,7 +43,7 @@ const Rockets = () => {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 

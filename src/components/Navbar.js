@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { getMissions } from '../redux/missions/mission';
+import { getMissions, getJoinedMission } from '../redux/missions/mission';
 
 const Navbar = () => {
   const dispatch = useDispatch();
+
+  const handleProfile = () => {
+    dispatch(getJoinedMission());
+  };
 
   return (
     <nav>
@@ -25,7 +29,11 @@ const Navbar = () => {
         </li>
         |
         <li>
-          <NavLink to="/profile" className={(navlist) => (navlist.isActive ? 'active' : 'none')}>
+          <NavLink
+            to="/profile"
+            className={(navlist) => (navlist.isActive ? 'active' : 'none')}
+            onClick={handleProfile}
+          >
             My Profile
           </NavLink>
         </li>
