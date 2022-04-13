@@ -1,77 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component renders correctly Navbar should render correctly 1`] = `
+exports[`rockets component renders datas accurately expect rockets component to render correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav>
-        <ul
-          class="navlist"
-        >
-          <li>
-            <a
-              aria-current="page"
-              class="active"
-              href="/"
-            >
-              Rockets
-            </a>
-          </li>
-          <li>
-            <a
-              class="none"
-              href="/missions"
-            >
-              Missions
-            </a>
-          </li>
-          |
-          <li>
-            <a
-              class="none"
-              href="/profile"
-            >
-              My Profile
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <section
+        class="rocket"
+      />
     </div>
   </body>,
   "container": <div>
-    <nav>
-      <ul
-        class="navlist"
-      >
-        <li>
-          <a
-            aria-current="page"
-            class="active"
-            href="/"
-          >
-            Rockets
-          </a>
-        </li>
-        <li>
-          <a
-            class="none"
-            href="/missions"
-          >
-            Missions
-          </a>
-        </li>
-        |
-        <li>
-          <a
-            class="none"
-            href="/profile"
-          >
-            My Profile
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <section
+      class="rocket"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
