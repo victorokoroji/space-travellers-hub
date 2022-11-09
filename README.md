@@ -3,7 +3,7 @@ Space Travelers' Hub is a web application made for a company that provides comme
 
 ![screenshot](./src/Images/Screen-shoot.gif)
 
-Our goal here is to Build a single page web application for Space Travelers' Hub webs using the React library, Click [here](https://space-travellers-booking-app.herokuapp.com/) to get a live preview of the project.
+Our goal here is to Build a single page web application for Space Travelers' Hub webs using the React library, Click [here](https://space-travellers-hub.up.railway.app/) to get a live preview of the project.
 
 ## Built With
 - React (A free and open-source front-end JavaScript library for building user interfaces based on UI components)
